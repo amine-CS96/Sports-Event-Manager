@@ -28,7 +28,7 @@ Sports-Event-Manager/
 │   ├── main.c           # Contains the main menu loop and user interaction logic
 │   └── events.h         # Defines data structures and implements all functions (event/participant handling)
 ├── data/
-│   └── ...              # Folder for text files or saved data 
+│   └── events.txt              # Folder for text files or saved data 
 └── README.md            # Project documentation
 ```
 
