@@ -22,19 +22,35 @@ The project makes use of dynamic memory allocation and doubly-linked lists to ha
 ---
 
 ## Project Structure
-
-* `main.c` — contains the main menu loop and user interaction logic.
-* `events.h` — defines data structures and declares/implements all functions (e.g., event and participant handling).
+```
+Sports-Event-Manager/
+├── src/
+│   ├── main.c           # Contains the main menu loop and user interaction logic
+│   └── events.h         # Defines data structures and implements all functions (event/participant handling)
+├── data/
+│   └── ...              # Folder for text files or saved data 
+└── README.md            # Project documentation
+```
 
 ---
 
-## Compilation & Execution
+
+ ## How to Compile
+
+From the project root directory, compile the code using:
 
 ```bash
 gcc src/main.c -o sports-event-manager
+```
+---
+
+## How to Run
+
+After compilation, launch the program:
+
+```bash
 ./sports-event-manager
 ```
-
 ---
 
 ## Usage
@@ -97,19 +113,20 @@ typedef struct list_ev {
 ## Example Saved Event Output Format
 
 ```
-------------------------Les informations de l'evenement 1 :-----------------------
- Nom de l'evenement  : Football Cup
- Date de l'evenement  (JJ/MM/AA): 15/07/2025
- Type de sport  : Football
+------------------------- Event Information #1: ------------------------
+ Event Name           : Football Cup
+ Event Date (DD/MM/YY): 15/07/2025
+ Sport Type           : Football
 
- *************** les informations des participants de l'evenement 1 : *************
- -->les informations de participant  1 :
- Nom : Smith
- Prenom : John
- Age : 23
- Sport : Football
- Resultat : 2
---------------------------------------------------------------------------------
+ *************** Participant Information for Event #1: ***************
+ --> Participant #1 Information:
+ Last Name : Smith
+ First Name: John
+ Age       : 23
+ Sport     : Football
+ Result    : 2
+------------------------------------------------------------------------
+
 ```
 
 ---
@@ -135,9 +152,12 @@ typedef struct list_ev {
 
 ---
 
-## Author
+## License
 
-*Amine El Harrab*
+
+This project is licensed under the MIT License — you are free to use, copy, modify, merge, publish, and distribute the software, provided that the original author is credited and the license notice is included in all copies or substantial portions of the software.
+
+See the [LICENSE](LICENSE) file for full terms.
 
 ---
 
