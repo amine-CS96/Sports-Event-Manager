@@ -241,7 +241,7 @@ if(fw==NULL){
      fprintf(fw," Type de sport  : %s \n",tmp->evenement.Type_spr);
 
      tmp2=tmp->evenement.list_paricipant ;
-      fprintf(fw,"\n\n *************** les informations des participants de l'evenement %d : *************\n",cmp) ;
+      fprintf(fw,"\n\n ************** les informations des participants de l'evenement %d : *************\n",cmp) ;
       cmt=0;
      while(tmp2!=NULL){
      cmt++ ;
